@@ -1,19 +1,19 @@
-package com.lc.exam00;
+package com.exam.lk_00;
 
 /**
  * 二分查找
  */
-public class LC_0033 {
+public class LK_0033 {
 
     public static void main(String[] args) {
-        LC_0033 lc_0033 = new LC_0033();
+        LK_0033 LK_0033 = new LK_0033();
 //        int[] nums = {4,5,6,7,0,1,2};
 //        int target = 0;
 //        int[] nums = {4,5,6,7,0,1,2};
 //        int target = 3;
         int[] nums = {1};
         int target = 0;
-        System.out.println(lc_0033.search(nums, target));
+        System.out.println(LK_0033.search(nums, target));
     }
 
     public int search(int[] nums, int target) {

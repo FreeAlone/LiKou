@@ -1,13 +1,13 @@
-package com.lc.exam00;
+package com.exam.lk_00;
 
-public class LC_0002 {
+public class LK_0002 {
 
     public static void main(String[] args) {
-        LC_0002 lc_0002 = new LC_0002();
+        LK_0002 LK_0002 = new LK_0002();
 
-        ListNode l1 = lc_0002.get1();
-        ListNode l2 = lc_0002.get2();
-        ListNode listNode = lc_0002.addTwoNumbers(l1, l2);
+        ListNode l1 = LK_0002.get1();
+        ListNode l2 = LK_0002.get2();
+        ListNode listNode = LK_0002.addTwoNumbers(l1, l2);
 
         System.out.println(listNode);
     }

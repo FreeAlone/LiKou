@@ -1,13 +1,13 @@
-package com.lc.exam00;
+package com.exam.lk_00;
 
 /**
  * 二分查找
  */
-public class LC_0069 {
+public class LK_0069 {
 
     public static void main(String[] args) {
-        LC_0069 lc69 = new LC_0069();
-        System.out.println(lc69.mySqrt(10));
+        LK_0069 lk_0069 = new LK_0069();
+        System.out.println(lk_0069.mySqrt(10));
         System.out.println(Long.MAX_VALUE);
         long z = Integer.MAX_VALUE / 2;
         System.out.println(z * z);

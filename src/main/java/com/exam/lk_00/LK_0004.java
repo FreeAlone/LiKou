@@ -1,12 +1,12 @@
-package com.lc.exam00;
+package com.exam.lk_00;
 
-public class LC_0004 {
+public class LK_0004 {
 
     public static void main(String[] args) {
-        LC_0004 lc_0004 = new LC_0004();
+        LK_0004 LK_0004 = new LK_0004();
         int[] nums1 = {1, 2};
         int[] nums2 = {3, 4};
-        System.out.println(lc_0004.findMedianSortedArrays(nums1, nums2));
+        System.out.println(LK_0004.findMedianSortedArrays(nums1, nums2));
     }
 
     public double findMedianSortedArrays(int[] nums1, int[] nums2) {
