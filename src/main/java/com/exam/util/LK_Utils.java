@@ -37,9 +37,13 @@ public class LK_Utils {
         }
         List<TreeNode> nodes = new ArrayList<>(arr.length);
         for (Integer integer: arr) {
-            TreeNode treeNode = new TreeNode();
-            treeNode.val = integer;
-            nodes.add(treeNode);
+            if (integer == null) {
+                nodes.add(null);
+            } else {
+                TreeNode treeNode = new TreeNode();
+                treeNode.val = integer;
+                nodes.add(treeNode);
+            }
         }
         for (int i = 0; i < arr.length / 2 - 1; i++) {
             TreeNode node = nodes.get(i);
@@ -48,10 +52,12 @@ public class LK_Utils {
         }
         // 只有当总节点数是奇数时，最后一个父节点才有右子节点
         int lastPNodeIndex = arr.length / 2 - 1;
-        TreeNode lastPNode = nodes.get(lastPNodeIndex);
-        lastPNode.left = nodes.get(lastPNodeIndex * 2 + 1);
-        if (arr.length % 2 != 0) {
-            lastPNode.right = nodes.get(lastPNodeIndex * 2 + 2);
+        if (lastPNodeIndex < arr.length && lastPNodeIndex > 0) {
+            TreeNode lastPNode = nodes.get(lastPNodeIndex);
+            lastPNode.left = nodes.get(lastPNodeIndex * 2 + 1);
+            if (arr.length % 2 != 0) {
+                lastPNode.right = nodes.get(lastPNodeIndex * 2 + 2);
+            }
         }
         return nodes.get(0);
     }
