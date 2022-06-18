@@ -12,16 +12,16 @@ public class LK_0114 {
         Integer[] root1 = {1,2,5,3,4,null,6};
         Integer[] root2 = {};
         Integer[] root3 = {0};
-        TreeNode node1 = LK_Utils.buildTreeNode(root1);
-        TreeNode node2 = LK_Utils.buildTreeNode(root2);
-        TreeNode node3 = LK_Utils.buildTreeNode(root3);
+        TreeNode node1 = LK_Utils.arrayToTree(root1);
+        TreeNode node2 = LK_Utils.arrayToTree(root2);
+        TreeNode node3 = LK_Utils.arrayToTree(root3);
         LK_0114 lk_0114 = new LK_0114();
         lk_0114.flatten(node1);
         lk_0114.flatten(node2);
         lk_0114.flatten(node3);
-        LK_Utils.printArr(LK_Utils.treeToArr(node1));
-        LK_Utils.printArr(LK_Utils.treeToArr(node2));
-        LK_Utils.printArr(LK_Utils.treeToArr(node3));
+        LK_Utils.printTree(node1);
+        LK_Utils.printTree(node2);
+        LK_Utils.printTree(node3);
     }
 
     public void flatten(TreeNode root) {

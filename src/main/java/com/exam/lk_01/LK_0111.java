@@ -8,7 +8,7 @@ public class LK_0111 {
     public static void main(String[] args) {
         Integer[] root = {3,9,20,null,null,15,7};
         LK_0111 lk_0111= new LK_0111();
-        System.out.println(lk_0111.minDepth(LK_Utils.buildTreeNode(root)));
+        System.out.println(lk_0111.minDepth(LK_Utils.arrayToTree(root)));
     }
 
     public int minDepth(TreeNode root) {

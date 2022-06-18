@@ -8,8 +8,8 @@ public class LK_0226 {
     public static void main(String[] args) {
         LK_0226 lk_0226 = new LK_0226();
         Integer[] nums = {};
-        TreeNode treeNode = lk_0226.invertTree(LK_Utils.buildTreeNode(nums));
-        LK_Utils.printArr(LK_Utils.treeToArr(treeNode));
+        TreeNode treeNode = lk_0226.invertTree(LK_Utils.arrayToTree(nums));
+        LK_Utils.printTree(treeNode);
     }
 
     public TreeNode invertTree(TreeNode root) {

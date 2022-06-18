@@ -9,8 +9,8 @@ public class LK_0108 {
         int[] nums1 = {-10,-3,0,5,9};
         int[] nums2 = {1,3};
         LK_0108 lk_0108 = new LK_0108();
-        LK_Utils.printArr(LK_Utils.treeToArr(lk_0108.sortedArrayToBST(nums1)));
-        LK_Utils.printArr(LK_Utils.treeToArr(lk_0108.sortedArrayToBST(nums2)));
+        LK_Utils.printTree(lk_0108.sortedArrayToBST(nums1));
+        LK_Utils.printTree(lk_0108.sortedArrayToBST(nums2));
     }
 
     public TreeNode sortedArrayToBST(int[] nums) {

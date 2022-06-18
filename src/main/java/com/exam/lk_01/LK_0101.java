@@ -12,10 +12,10 @@ public class LK_0101 {
         LK_0101 lk_0101 = new LK_0101();
         Integer[] nums = {1,2,2,3,4,4,3};
         Integer[] nums2 = {1,2,2,null,3,null,3};
-        System.out.println(lk_0101.isSymmetric(LK_Utils.buildTreeNode(nums)));
-        System.out.println(lk_0101.isSymmetric2(LK_Utils.buildTreeNode(nums)));
-        System.out.println(lk_0101.isSymmetric(LK_Utils.buildTreeNode(nums2)));
-        System.out.println(lk_0101.isSymmetric2(LK_Utils.buildTreeNode(nums2)));
+        System.out.println(lk_0101.isSymmetric(LK_Utils.arrayToTree(nums)));
+        System.out.println(lk_0101.isSymmetric2(LK_Utils.arrayToTree(nums)));
+        System.out.println(lk_0101.isSymmetric(LK_Utils.arrayToTree(nums2)));
+        System.out.println(lk_0101.isSymmetric2(LK_Utils.arrayToTree(nums2)));
     }
 
     public boolean isSymmetric(TreeNode root) {
