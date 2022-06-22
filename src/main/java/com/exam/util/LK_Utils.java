@@ -59,6 +59,18 @@ public class LK_Utils {
         printArr(Arrays.stream(arr).boxed().toArray(Integer[]::new));
     }
 
+    public static void printArr(char[] arr) {
+        StringBuilder stringBuilder = new StringBuilder("[");
+        for (int i = 0; i < arr.length; i++) {
+            if (i > 0) {
+                stringBuilder.append(",");
+            }
+            stringBuilder.append(arr[i]);
+        }
+        stringBuilder.append("]");
+        System.out.println(stringBuilder);
+    }
+
     public static <T> void printArr(T[] arr) {
         if (arr == null) {
             return;
@@ -72,6 +84,28 @@ public class LK_Utils {
         }
         stringBuilder.append("]");
         System.out.println(stringBuilder);
+    }
+
+    public static <T> void printArrArr(char[][] t) {
+        List<List<Character>> list = new ArrayList<>();
+        for (char[] ts : t) {
+            List<Character> ll = new ArrayList<>();
+            for (char c : ts) {
+                ll.add(c);
+            }
+            list.add(ll);
+        }
+        printListList(list);
+    }
+    public static <T> void printArrArr(T[][] t) {
+        if (t == null) {
+            return;
+        }
+        List<List<T>> list = new ArrayList<>();
+        for (T[] ts : t) {
+            list.add(new ArrayList<>(Arrays.asList(ts)));
+        }
+        printListList(list);
     }
 
     public static <T> void printListList(List<List<T>> list) {
